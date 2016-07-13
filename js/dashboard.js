@@ -1,9 +1,4 @@
-/*
- * Author: Abdullah A Almsaeed
- * Date: 4 Jan 2014
- * Description:
- *      This is a demo file used only for the main dashboard (index.html)
- **/
+
 
 $(function () {
 
@@ -208,7 +203,7 @@ $(function () {
   });
   
   //TRAI Chart Sample
-  if($('#call-drop-chart').is(':visible')){
+
   var line = new Morris.Line({
     element: 'call-drop-chart',
     resize: true,
@@ -238,8 +233,8 @@ $(function () {
     gridTextFamily: "Open Sans",
     gridTextSize: 10
   });
-}
-if($('#nw-2g-chart').is(':visible')){
+
+
   var line = new Morris.Line({
     element: 'nw-2g-chart',
     resize: true,
@@ -269,8 +264,8 @@ if($('#nw-2g-chart').is(':visible')){
     gridTextFamily: "Open Sans",
     gridTextSize: 10
   });
-}
-if($('#nw-3gchart').is(':visible')){
+
+
   var line = new Morris.Line({
     element: 'nw-3g-chart',
     resize: true,
@@ -300,6 +295,6 @@ if($('#nw-3gchart').is(':visible')){
     gridTextFamily: "Open Sans",
     gridTextSize: 10
   });
-}
+
 
 });
