@@ -454,6 +454,7 @@
 		        chart.draw(data, options);
 		    };
 			$(function () {
+				if($('#bar-chart').is(':visible')){
 				var bar = new Morris.Bar({
 			      element: 'bar-chart',
 			      resize: true,
@@ -484,7 +485,7 @@
 			      ykeys: ['a', 'b'],
 			      labels: ['BTS:Current Month', 'BTS:Previous Month'],
 			      hideHover: 'auto'
-			    });
+			    });}
 			    $(window).resize(function() {
 			    	drawRegionsMap();
 			    });
